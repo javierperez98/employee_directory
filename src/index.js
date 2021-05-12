@@ -5,9 +5,18 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
+	<>
+		<header className="bg-dark p-5 border-bottom border-primary">
+			<h1 className="text-light">Employee Directory</h1>
+		</header>
+		<main>
+			<section className="d-flex flex-column align-items-center px-3 px-md-5">
+				<App />
+			</section>
+		</main>
+		<footer></footer>
+	</>,
+
 	document.getElementById("root")
 );
 
