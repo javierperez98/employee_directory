@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Rows from "./components/Rows";
 import API from "./utils/Api";
+import Table from "./components/Table";
 
 function App() {
 	const [List, setList] = useState([]);
@@ -51,20 +52,7 @@ function App() {
 					Reset
 				</button>
 			</div>
-			<div className="table-responsive">
-				<table className="table">
-					<thead className="thead-light text-center">
-						<tr>
-							<th scope="col">Image</th>
-							<th scope="col">Name</th>
-							<th scope="col">Phone</th>
-							<th scope="col">Email</th>
-							<th scope="col">DOB: MM/DD/YY</th>
-						</tr>
-					</thead>
-					<Rows arr={List} />
-				</table>
-			</div>
+			<Table row={<Rows arr={List} />} />
 		</>
 	);
 }
