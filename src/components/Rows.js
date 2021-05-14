@@ -1,5 +1,6 @@
 import React from "react";
 import API from "../utils/Api";
+import formatDate from "../utils/formatDate";
 
 API.search().then((res) => {
 	return res.data.results;
@@ -18,7 +19,7 @@ function Rows(props) {
 					</td>
 					<td>{info.phone}</td>
 					<td>{info.email}</td>
-					<td>{info.dob.date}</td>
+					<td>{formatDate(info.dob.date)}</td>
 				</tr>
 			))}
 		</tbody>
