@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Rows from "./components/Rows";
 import API from "./utils/Api";
 import Table from "./components/Table";
+import Search from "./components/Search";
 
 function App() {
 	const [List, setList] = useState([]);
@@ -40,18 +41,7 @@ function App() {
 
 	return (
 		<>
-			<div className="d-flex flex-row">
-				<input
-					value={Find}
-					onChange={handleFind}
-					className="form-control form-control-lg mx-auto my-5"
-					type="text"
-					placeholder="Search User"
-				/>
-				<button type="button" onClick={reset} className="btn btn-secondary my-5">
-					Reset
-				</button>
-			</div>
+			<Search find={Find} handleFind={handleFind} reset={reset} />
 			<Table row={<Rows arr={List} />} />
 		</>
 	);
