@@ -1,16 +1,12 @@
 import React from "react";
-import API from "../utils/Api";
 import formatDate from "../utils/formatDate";
 
-API.search().then((res) => {
-	return res.data.results;
-});
-
 function Rows(props) {
+	let i = 0;
 	return (
 		<tbody className="text-center">
 			{props.arr.map((info) => (
-				<tr>
+				<tr key={(i += 1)}>
 					<td>
 						<img src={info.picture.thumbnail} alt={info.name.first}></img>
 					</td>
