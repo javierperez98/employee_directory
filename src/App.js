@@ -25,7 +25,7 @@ function App() {
 							<th scope="col">Name</th>
 							<th scope="col">Phone</th>
 							<th scope="col">Email</th>
-							<th scope="col">DOB: M/DD/YY</th>
+							<th scope="col">DOB: MM/DD/YY</th>
 						</tr>
 					</thead>
 					<Rows arr={List} />
