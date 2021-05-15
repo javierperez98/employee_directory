@@ -24,6 +24,17 @@ function App() {
 		});
 	};
 
+	const handleSort = () => {
+		const sortedUsers = List.users.sort((a, b) =>
+			a.name.first.localeCompare(b.name.first)
+		);
+		setList({
+			...List,
+			search: sortedUsers,
+		});
+		console.log("Hello");
+	};
+
 	useEffect(() => {
 		API.get().then((res) => {
 			setList({
@@ -38,7 +49,7 @@ function App() {
 	return (
 		<>
 			<Search handleFind={handleFind} />
-			<Table row={<Rows arr={List.search} />} />
+			<Table handleSort={handleSort} row={<Rows arr={List.search} />} />
 		</>
 	);
 }
