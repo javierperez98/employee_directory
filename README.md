@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# `Employee Directory App`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![MIT](https://img.shields.io/github/license/microsoft/vscode)
 
-## Available Scripts
+## `Description`
 
-In the project directory, you can run:
+<!-- Provide a short description explaining the what, why, and how of your project.
+What was your motivation? Why did you build this project? What problem does it solve? What did you learn? -->
 
-### `npm start`
+- In this project I created an Employee Directory using React.js, Bootstrap and Random User Api. I was about to learn more about react and implement what I learned and also test myself. I learned alot doing this project and really enjoyed using React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## `Table of Contents`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Questions](#questions)
 
-### `npm test`
+## `Installation`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
-### `npm run build`
+To install copy and paste either the SSH or HTTPS key and run it in either Bash (PC Users) or Terminal (MAC Users) using the git clone command.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- SSH key:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```md
+git clone git@github.com:javierperez98/employee_directory.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTTPS key:
 
-### `npm run eject`
+```md
+git clone https://github.com/javierperez98/employee_directory.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Next you'll have to install all the required node modules by opening the index.js file using terminal/bash and typing in the following command.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```md
+npm i
+or
+npm install
+and then
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## `Usage`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- Provide instructions and examples for use. Include screenshots as needed. -->
 
-## Learn More
+### You can Search for an Employee by name
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Search for user](public/images/search.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### You can Sort Employees by name or email A-Z
 
-### Code Splitting
+![Sort users A-Z](public/images/A-Z.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### You can Sort Employees by name or email Z-A
 
-### Analyzing the Bundle Size
+![Search users Z-A](public/images/Z-A.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## `Credits`
 
-### Making a Progressive Web App
+<!-- List your collaborators, if any, with links to their GitHub profiles. Links to websites or resources. -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- https://www.google.com
+- https://www.npmjs.com/
+- https://stackoverflow.com/
+- https://web.dev/
+- https://reactjs.org/
+- https://create-react-app.dev/
+- https://randomuser.me/
+- https://usehooks.com/
+- https://fontawesome.com/icons
 
-### Advanced Configuration
+## `License`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- If you need help choosing a license, refer to https://choosealicense.com/ -->
 
-### Deployment
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Copyright (c) 2021 [Javier Perez]
 
-### `npm run build` fails to minify
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## `Questions`
+
+Contact me for any questions you might have.
+
+- GitHub: [javierperez98](https://github.com/javierperez98)
+- Email: [javier21perez98@gmail.com](mailto:javier21perez98@gmail.com)
+- LinkedIn: [javierperez98](https://www.linkedin.com/in/javier-perez98/)
