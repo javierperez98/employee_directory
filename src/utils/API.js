@@ -3,7 +3,7 @@ import axios from "axios";
 const API = {
 	get: function () {
 		return axios.get(
-			"https://randomuser.me/api/?results=15&inc=picture,name,phone,email,dob&nat=us"
+			"https://randomuser.me/api/?results=50&inc=picture,name,phone,email,dob&nat=us"
 		);
 	},
 };

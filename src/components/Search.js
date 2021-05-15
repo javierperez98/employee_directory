@@ -2,12 +2,15 @@ import React from "react";
 
 function Search(props) {
 	return (
-		<div className="d-flex flex-row">
+		<div className="my-5 d-flex flex-row col-md-9 col-lg-6">
+			<label class="form-label m-0 d-flex align-items-center">
+				<h2 className="m-0">Search: </h2>
+			</label>
 			<input
 				onChange={props.handleFind}
-				className="form-control form-control-lg mx-auto my-5"
+				className="form-control form-control-lg mx-auto p-1"
 				type="text"
-				placeholder="Search User"
+				placeholder="Enter Name"
 			/>
 		</div>
 	);
