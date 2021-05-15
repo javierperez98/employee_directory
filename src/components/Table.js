@@ -22,7 +22,13 @@ function Table(props) {
 							Phone
 						</th>
 						<th scope="col" className="text-dark">
-							Email
+							<button
+								type="button"
+								className="btn btn-link p-0 text-decoration-none text-dark font-weight-bold"
+								onClick={props.handleSort}
+							>
+								Email <i className="fa fa-sort" />
+							</button>
 						</th>
 						<th scope="col" className="text-dark">
 							DOB: MM/DD/YY
