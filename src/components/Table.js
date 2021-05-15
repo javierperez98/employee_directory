@@ -35,7 +35,7 @@ function Table(props) {
 						</th>
 					</tr>
 				</thead>
-				{props.row}
+				{props.children}
 			</table>
 		</div>
 	);
