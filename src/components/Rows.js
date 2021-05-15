@@ -8,7 +8,7 @@ function Rows(props) {
 			{props.arr.map((info) => (
 				<tr key={(i += 1)}>
 					<td>
-						<img src={info.picture.thumbnail} alt={info.name.first}></img>
+						<img src={info.picture.medium} alt={info.name.first}></img>
 					</td>
 					<td>
 						{info.name.first} {info.name.last}
