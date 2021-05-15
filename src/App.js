@@ -3,6 +3,9 @@ import Rows from "./components/Rows";
 import API from "./utils/Api";
 import Table from "./components/Table";
 import Search from "./components/Search";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
 	const [List, setList] = useState({
@@ -62,8 +65,14 @@ function App() {
 
 	return (
 		<>
-			<Search handleFind={handleFind} />
-			<Table handleSort={handleSort} row={<Rows arr={List.search} />} />
+			<Header />
+			<Main>
+				<Search handleFind={handleFind} />
+				<Table handleSort={handleSort}>
+					<Rows arr={List.search} />
+				</Table>
+			</Main>
+			<Footer />
 		</>
 	);
 }
