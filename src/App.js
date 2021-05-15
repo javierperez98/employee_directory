@@ -8,6 +8,7 @@ function App() {
 	const [List, setList] = useState({
 		users: [],
 		search: [],
+		sorted: false,
 	});
 
 	const handleFind = (e) => {
@@ -25,14 +26,27 @@ function App() {
 	};
 
 	const handleSort = () => {
-		const sortedUsers = List.users.sort((a, b) =>
-			a.name.first.localeCompare(b.name.first)
-		);
-		setList({
-			...List,
-			search: sortedUsers,
-		});
-		console.log("Hello");
+		if (!List.sorted) {
+			const sortedUsers = List.users.sort((a, b) =>
+				a.name.first.localeCompare(b.name.first)
+			);
+			setList({
+				...List,
+				search: sortedUsers,
+				sorted: true,
+			});
+			console.log("Sorted A-Z");
+		} else {
+			const sortedUsers = List.users.sort((a, b) =>
+				b.name.first.localeCompare(a.name.first)
+			);
+			setList({
+				...List,
+				search: sortedUsers,
+				sorted: false,
+			});
+			console.log("Sorted Z-A");
+		}
 	};
 
 	useEffect(() => {
