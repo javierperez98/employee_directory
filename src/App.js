@@ -5,35 +5,40 @@ import Table from "./components/Table";
 import Search from "./components/Search";
 
 function App() {
-	const [List, setList] = useState([]);
-	const [Find, setFind] = useState("");
+	const [List, setList] = useState({
+		users: [],
+		search: [],
+	});
 
-	const handleFind = (event) => {
-		setFind(event.target.value);
-		search();
-	};
-
-	const search = () => {
-		const result = List.filter((user) =>
-			(user.name.first + " " + user.name.last)
+	const handleFind = (e) => {
+		const user = e.target.value;
+		const filtered = List.users.filter((res) => {
+			return (res.name.first + " " + res.name.last)
 				.toLowerCase()
-				.includes(Find.toLowerCase())
-		);
-		if (result.length > 0) {
-			setList(result);
-		}
+				.includes(user.toLowerCase());
+		});
+
+		setList({
+			...List,
+			search: filtered,
+		});
 	};
 
 	useEffect(() => {
-		API.search().then((res) => {
-			setList(res.data.results);
+		API.get().then((res) => {
+			setList({
+				...List,
+				users: res.data.results,
+				search: res.data.results,
+			});
 		});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
 		<>
-			<Search find={Find} handleFind={handleFind} />
-			<Table row={<Rows arr={List} />} />
+			<Search handleFind={handleFind} />
+			<Table row={<Rows arr={List.search} />} />
 		</>
 	);
 }
