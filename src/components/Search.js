@@ -10,13 +10,6 @@ function Search(props) {
 				type="text"
 				placeholder="Search User"
 			/>
-			<button
-				type="button"
-				onClick={props.reset}
-				className="btn btn-secondary my-5"
-			>
-				Reset
-			</button>
 		</div>
 	);
 }
