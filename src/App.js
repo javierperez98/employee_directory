@@ -60,7 +60,6 @@ function App() {
 				search: res.data.results,
 			});
 		});
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
